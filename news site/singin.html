@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+    <title>sing in</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+    </head>
+    <body>
+        <div class="bhm" id="two">
+            <form action="#">
+              <label for="number" class="font"> نام کاربری:</label>
+              <input type="code" name="number" id="code" placeholder="لطفا کدملی خود را وارد کنید" required  >
+        <br><br>
+              <label for="password" class="font"> رمز عبور:</label>
+              <input type="password" name="password" id="password" placeholder="لطفا شماره موبایل خود را وارد کنید" required>
+        <br><br>
+              <button class="button-33" type="submit" id="but">ورود</button>
+            </form>
+        </div>
+        <script>
+            document.querySelector("form").addEventListener("submit", function (event) {
+              event.preventDefault(); // جلوگیری از ارسال فرم پیش از اعتبارسنجی
+
+              const code = document.getElementById("code").value.trim();
+              const password = document.getElementById("password").value.trim();
+
+              if (!/^\d{10}$/.test(code)) {
+                alert("نام کاربری معتبر نیست .");
+                return;
+              }
+
+              if (!/^09\d{9}$/.test(password)) {
+                alert("رمز عبور معتبر نیست.");
+                return;
+              }
+
+              // اگر تمام اعتبارسنجی‌ها موفق باشند
+              alert("فرم با موفقیت ارسال شد!");
+
+              // هدایت کاربر به صفحه جدید پس از اعتبارسنجی موفقیت‌آمیز
+              window.location.href = "org.html"; // هدایت به صفحه جدید
+
+            });
+        </script>
+    </body>
+</html>

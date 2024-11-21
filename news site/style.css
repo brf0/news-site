@@ -1,0 +1,225 @@
+html{
+    font-size: 100%;
+    border-radius: 0.5;
+    font-family: Vazir;
+    background: rgba(201, 245, 246, 0.5);
+}
+.bhm {
+    background: linear-gradient(50deg, rgba(164, 240, 236, 0.65) , rgb(146, 236, 207), rgba(147, 226, 222, 0.65) 60%, rgb(137, 236, 214));
+    border: 4px solid rgba(1, 118, 103, 0.9);
+    box-sizing: border-box;
+    padding: 0px 10px 5px;
+    font-family: Vazir;
+    font-weight: bold;
+    text-align: right;
+    line-height: 1.2;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    width: 45%;
+    border-radius: 6px;
+    margin-right: 28%;
+    margin-top: 6%;
+    padding-right: 2%;
+    box-shadow: 15px 14px 26px 8px rgb(138, 198, 185);
+}
+    #label {
+        padding-left: 20px;
+    }
+    .button-33 {
+        font-family: Vazir;
+        font-weight: bold;
+        font-size: 0.9rem;
+        background-color: rgb(225, 242, 249);
+        border: rgba(1, 118, 103, 0.7) solid 2px;
+        border-radius: 4px;
+        padding-right: 7px;
+        margin-right: 87%;
+        margin-bottom: 8px;
+        width: 75px;
+        height: 35px;
+
+    }
+    .button-33:hover {
+        border: rgb(1, 118, 103) solid 2.4px;
+        font-weight: bold;
+        font-size: medium;
+        box-shadow: 1px 0px 6px 6px rgb(138, 198, 185);
+    }
+    ::placeholder {
+        font-family: Vazir;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: rgb(175, 170, 164);
+    }
+    input:hover {
+        border: rgb(1, 118, 103) solid 2.8px;
+        box-shadow: 1px 0px 6px 6px rgb(138, 198, 185);
+    }
+    input {
+        border-radius: 8px;
+        border: rgba(1, 118, 103,0.7) solid 2.5px;
+        padding: 3px;
+        padding-right: 6px;
+        width: 40%;
+    }
+    .fm input {
+        width: 10px;
+        box-shadow: none;
+    }
+    .fm {
+        margin-right: 6px;
+    }
+    .checkbox {
+        width: 25px;
+    }
+    #file {
+        background-color: rgb(249, 250, 250);
+        width: 24%;
+        height: 25px;
+        padding-top: 6px;
+    }
+    .tex {
+        font-size: 0.9rem;
+    }
+    #date {
+        text-align: center;
+    }
+    .ab {
+        margin: 0 0.8rem 2rem;
+        padding: 0.8rem;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(64, 159, 128);
+    }
+    header.ab {
+        padding-top: 1rem;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 2.8rem;
+        border-radius: 6px;
+    }
+    .div2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+    .div2 .ac {
+        font-family: Vazir;
+        color: #e7e5e5;
+        height: 14px;
+        padding-bottom: 28px;
+        margin: 0;
+    }
+    #ac1 {
+        margin-left: 0.5rem;
+    }
+    div.ac {
+        padding: 1rem 2rem;
+        padding-top: 1.6rem;
+    }
+
+    div.aa {
+        color: #e7e5e5;
+        text-align: center;
+        font-family: cursive;
+        font-size: 1.3rem;
+    }
+    #cll {
+        padding-bottom: 3px;
+        margin-right: 10rem;
+    }
+    section.ab {
+        height: 26rem;
+        flex-direction: row-reverse;
+        border-radius: 6px;
+    }
+    #nnn {
+       padding: 2.4rem 4rem;
+       flex-basis: 12%;
+       font-size: 1.35rem;
+       height: 78%;
+    }
+    #sec {
+       flex-basis: 92%;
+       text-align: left;
+    }
+    #asi {
+       padding: 0;
+       border-radius: 6px;
+       margin-bottom: 0px;
+       background-color: #0e2117;
+       height: 120px;
+    }
+    #fot {
+       padding: 0.4rem;
+       flex-basis: 20%;
+       background-color: rgb(157, 231, 202);
+    }
+    #fot:hover {
+       background-color: rgb(110, 190, 158);
+    }
+    a  {
+       text-decoration: none;
+       color: #183725;
+    }
+    footer.ab {
+        padding: 0;
+        border-radius: 6px;
+        background: rgba(207, 243, 244, 0.5);
+    }
+
+    div.br {
+        background: rgb(109 183 159 / 90%);
+        padding: 1.3rem;
+    }
+    .ac {
+        color: #e7e5e5;
+        padding: 1.2rem 2rem;
+        text-align: center;
+        font-family: cursive;
+        font-size: medium;
+        justify-content:space-around;
+        margin: 1.2rem;
+        border-radius: 6px;
+    }
+    #bbb p {
+        margin: 0;
+        text-align: center;
+        position: static;
+        font-size: 1.35rem;
+        padding-top: 50px;
+    }
+    .button-33#but {
+        padding-bottom: 3px;
+    }
+    .bhm#two {
+        margin-top: 8%;
+        padding-top: 2%;
+    }
+    .div2 a {
+        color: white;
+        text-decoration: none;
+        font-family: Vazir;
+        font-size: 1.1rem;
+    }
+    .div2 a:hover {
+        color: rgb(11, 43, 26);
+        font-weight: bold;
+    }
+    .button-33 a {
+        color: rgb(9, 9, 9);
+        text-decoration: none;
+        font-family: Vazir;
+        font-size: 1rem;
+    }
+    .button-33 a:hover {
+        color: rgb(11, 43, 26);
+        font-weight: bold;
+        font-size: 1.05rem;
+    }
+    #icon {
+        margin-top: 6px;
+    }

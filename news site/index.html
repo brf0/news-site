@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html  dir="rtl">
+<head>
+    <title>register</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+</head>
+<body>
+    <div class="bhm">
+        <form method="post" action="#">
+          <label for="name" class="font"> نام:
+          <input type="text" name="your name" id="name" placeholder="لطفا نام خود را وارد کنید" required></label>
+    <br><br>
+          <label for="lastname" class="font"> نام خانوادگی:
+          <input type="text" name="your lastname" id="lastname" placeholder="لطفا نام خانوادگی خود را وارد کنید" required >
+        </label>
+    <br><br>
+          <label for="code" class="font"> کد ملی:
+          <input type="text" name="meli code" id="code" placeholder="لطفا کد ملی خود را وارد کنید" required >
+          </label>
+    <br><br>
+         <label for="number" class="font"> شماره موبایل:
+         <input type="text" name="mobile number" id="number" placeholder="لطفا شماره موبایل خود را وارد کنید" required >
+         </label>
+    <br><br>
+          <label for="date" class="font"> تاریخ تولد:
+          <input type="date" name="date" id="date" required> </label>
+    <br><br>
+          <label id="label" class="font">جنسیت:
+          <label class="fm">مرد
+          <input type="radio" name="sender" value="مرد" required>
+          </label>
+
+          <label class="fm">زن
+          <input type="radio" name="sender" value="زن" required>
+          </label>
+    <br><br>
+
+          <label>عکس:
+          <input type="file" name="file" id="file" accept="image/*" required></label>
+    <br><br>
+
+        <button class="button-33" type="submit">ثبت نام</button>
+     </form>
+    </div>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+          event.preventDefault(); // جلوگیری از ارسال فرم پیش از اعتبارسنجی
+
+          const name = document.getElementById("name").value.trim();
+          const lastName = document.getElementById("lastname").value.trim();
+          const code = document.getElementById("code").value.trim();
+          const number = document.getElementById("number").value.trim();
+          const date = document.getElementById("date").value.trim();
+          const gender = document.querySelector("input[name='sender']:checked");
+          const file = document.getElementById("file").files[0];
+
+          // اعتبارسنجی نام
+          if (!name) {
+            alert("لطفاً نام خود را وارد کنید.");
+            return;
+          }
+
+          // اعتبارسنجی نام خانوادگی
+          if (!lastName) {
+            alert("لطفاً نام خانوادگی خود را وارد کنید.");
+            return;
+          }
+
+          // اعتبارسنجی کد ملی (باید عدد 10 رقمی باشد)
+          if (!/^\d{10}$/.test(code)) {
+            alert("کد ملی باید 10 رقم باشد.");
+            return;
+          }
+
+          // اعتبارسنجی شماره تلفن (باید 11 رقم و با 09 شروع شود)
+          if (!/^09\d{9}$/.test(number)) {
+            alert("شماره تلفن معتبر نیست.");
+            return;
+          }
+
+          // اعتبارسنجی تاریخ تولد
+          if (!date) {
+            alert("لطفاً تاریخ تولد خود را وارد کنید.");
+            return;
+          }
+
+          // اعتبارسنجی جنسیت
+          if (!gender) {
+            alert("لطفاً جنسیت خود را انتخاب کنید.");
+            return;
+          }
+
+          // اعتبارسنجی فایل عکس
+          if (!file) {
+            alert("لطفاً یک عکس انتخاب کنید.");
+            return;
+          }
+
+          // اگر تمام اعتبارسنجی‌ها موفق باشند
+          alert("فرم با موفقیت ارسال شد!");
+
+          // هدایت کاربر به صفحه جدید پس از اعتبارسنجی موفقیت‌آمیز
+          window.location.href = "singin.html"; // هدایت به صفحه جدید
+
+        });
+    </script>
+</body>
+</html>
